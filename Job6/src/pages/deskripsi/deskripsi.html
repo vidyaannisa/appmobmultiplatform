@@ -1,0 +1,43 @@
+<!--
+  Generated template for the DeskripsiPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Detail Product</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-col class="ion-card" col-12 inset style="padding: 0px !important">         
+		<ion-card> 
+ 
+        <img *ngIf="product.image==null" src="https://ecommerce.jaroji.web.id/uploads/product/images/no-image.jpg" /> 
+ 
+		<img *ngIf="product.image!=null" src="https://ecommerce.jaroji.web.id/uploads/product/images/{{ product.image }}" />           
+		<ion-card-content>             
+			<ion-list>
+				<ion-item> 
+					<h2>Nama : </h2>
+					{{product.name}}
+				</ion-item>
+			</ion-list>
+			<ion-list>
+				<ion-item> 
+					<h2>Kategori :  </h2>
+					{{product.categori_id}}
+				</ion-item>
+			</ion-list>
+			<ion-list>
+				<ion-item> 
+					<h2>Harga : Rp. </h2>
+					{{product.price}}
+				</ion-item>
+			</ion-list>
+		</ion-card-content>
+		</ion-card>
+		</ion-col>
+		    
+</ion-content>

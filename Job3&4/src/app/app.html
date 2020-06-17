@@ -1,0 +1,8 @@
+<ion-nav [root]="rootPage">
+    <div *ngIf="showSplash" class="splash">
+        <div class="spinner"></div>
+       </div>
+       <ion-nav [root]="rootPage" #content
+       swipeBackEnabled="false"></ion-nav>
+       
+</ion-nav>
